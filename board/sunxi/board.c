@@ -313,11 +313,6 @@ static void mmc_pinmux_setup(int sdc)
 	switch (sdc) {
 	case 0:
 		/* SDC0: PF0-PF5 */
-		for (pin = SUNXI_GPF(0); pin <= SUNXI_GPF(5); pin++) {
-			sunxi_gpio_set_cfgpin(pin, SUNXI_GPF_SDC0);
-			sunxi_gpio_set_pull(pin, SUNXI_GPIO_PULL_UP);
-			sunxi_gpio_set_drv(pin, 2);
-		}
 		break;
 
 	case 1:

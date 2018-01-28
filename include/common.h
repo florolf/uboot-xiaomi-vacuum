@@ -731,4 +731,6 @@ int cpu_release(int nr, int argc, char * const argv[]);
 # include <environment.h>
 #endif
 
+#define DEBUG
+
 #endif	/* __COMMON_H_ */
